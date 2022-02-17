@@ -64,7 +64,14 @@ function performCalculation(){
         result = parseInt(calculator.firstNumber) - parseInt(calculator.displayNumber);
     }
 
-    calculator.displayNumber = result;
+    // object will send for argument function putHistory()
+    const history = {
+        firstNumber: calculator.firstNumber,
+        secondNumber: calculator.displayNumber,
+        operator: calculator.operator,
+        result: result
+    }
+    putHistory(history);
 }
 
 // add event click button element

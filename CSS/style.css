@@ -72,10 +72,46 @@ body{
     padding: 30px;
     margin-top: 20px;
 }
+/* add history calculation */
+.history{
+    width: 80%;
+    margin: 30px auto 0 auto;
+    overflow:scroll;
+}
 
-/* add media screen button under 513px*/
+/* styling table */
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+/* add padding for th and td */
+th,
+td{
+    text-align: center;
+    padding: 16px;
+}
+
+/* add background color in th */
+th{
+    background-color: orange;
+    color: white;
+}
+
+/* add sudo class selector for tr  with background grey*/
+tr:nth-child(even){
+    background-color: #d2d2d2;
+}
+
+/* add media screen button and history under 513px*/
 @media screen and (max-width: 513px) {
-    .button{
+    .button {
         padding: 10px;
+    }
+
+    .history {
+        width: 100%;
     }
 }
