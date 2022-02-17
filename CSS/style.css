@@ -1,0 +1,42 @@
+/* apply a box-sizing in the all elemen*/
+*{
+    box-sizing: border-box;
+}
+
+/* apply a font familiy all text in the body with sans-serif */
+body{
+    font-family: sans-serif;
+}
+
+
+.flex-container-coloumn{
+    /* make a coloumn in the row */
+    display: flex;
+    flex-direction: column;
+
+    /* support property */
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.flex-container-row{
+    /* add row in the items button */
+    display: flex;
+}
+
+/* styling button and make an button element fully empty space on the container */
+.button{
+    flex-basis: 25%;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid black;
+    background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+    cursor: pointer;
+}
+
+/* for button equal grater than other button */
+.double{
+    flex-basis: 50%;
+}
