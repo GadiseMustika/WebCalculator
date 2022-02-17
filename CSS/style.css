@@ -34,9 +34,48 @@ body{
     border: 1px solid black;
     background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
     cursor: pointer;
+    border-radius: 2px;
+}
+
+/* hovering effct in items button */
+.button:hover{
+    font-weight: bold;
 }
 
 /* for button equal grater than other button */
 .double{
     flex-basis: 50%;
+}
+
+/* add backgound on the display elemet */
+.display{
+    width: 100%;
+    color: white;
+    background-color: #333;
+    padding: 40px;
+    font-size: 1.5em;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+/* backround color for button negative,equals,and perator */
+.operator,
+.negative,
+.equals{
+    background: orange;
+}
+
+/* add card so that make calc appearance different */
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0,.3);
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+/* add media screen button under 513px*/
+@media screen and (max-width: 513px) {
+    .button{
+        padding: 10px;
+    }
 }
