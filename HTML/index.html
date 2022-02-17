@@ -1,1 +1,48 @@
-!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Calculator</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <!-- for coloumns in container calc -->
+    <div class="flex-container-coloumn">
+        <!-- make a display for showing an output from calculation -->
+        <div class="display">
+            <!-- showing a number before given input number -->
+            <h1 id="displayNumber">0</h1>
+        </div>
+        <!-- for rows in the flex items that is a button input calc-->
+        <div class="flex-container-row">
+            <div class="button">7</div>
+            <div class="button">8</div>
+            <div class="button">9</div>
+            <!-- add in attr class button and add suitable with each function -->
+            <div class="button negative">+/-</div>
+        </div>
+        <div class="flex-container-row">
+            <div class="button">4</div>
+            <div class="button">5</div>
+            <div class="button">6</div>
+              <!-- add in attr class button operator -->
+            <div class="button operator">-</div>
+        </div>
+        <div class="flex-container-row">
+            <div class="button">1</div>
+            <div class="button">2</div>
+            <div class="button">3</div>
+            <!-- add in attr class button operator -->
+            <div class="button operator">+</div>
+        </div>
+        <div class="flex-container-row">
+            <!-- add in attr class button and add suitable with each function -->
+            <div class="button clear">CE</div>
+            <div class="button">0</div>
+            <div class="button equals"> = </div>
+        </div>
+    </div>
+</body>
+</html>
